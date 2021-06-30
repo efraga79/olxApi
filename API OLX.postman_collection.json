@@ -1,0 +1,378 @@
+{
+	"info": {
+		"_postman_id": "fcf94f40-6d79-4b77-b441-2f86500b9bca",
+		"name": "API OLX",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/states",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Estevaldo Fraga",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "estevaldo@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Yeshua-11",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "60c8d8dd97340000450072d4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseUrl}}/states",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"states"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/user/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Estevaldo Fraga",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "estevaldo@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Yeshua-11",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "60c8d8dd97340000450072d4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseUrl}}/user/signup",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/user/signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "estevaldo@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Yeshua-11",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseUrl}}/user/signin",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/user/me",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/user/me?token=$2b$10$/KUOPJU42alE3F6ITwGVXu/H.R0NNq54oim0zt0OS.KU/wr1AoeNa",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user",
+						"me"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "$2b$10$/KUOPJU42alE3F6ITwGVXu/H.R0NNq54oim0zt0OS.KU/wr1AoeNa"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/user/me",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "$2b$10$/KUOPJU42alE3F6ITwGVXu/H.R0NNq54oim0zt0OS.KU/wr1AoeNa",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Estevaldo Fraga Ribeiro",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "estevaldo@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "state",
+							"value": "60c8d8dd97340000450072d4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseUrl}}/user/me",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/categories",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Estevaldo Fraga",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "estevaldo@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Yeshua-11",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "60c8d8dd97340000450072d4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseUrl}}/categories",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/ad/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "$2b$10$/KUOPJU42alE3F6ITwGVXu/H.R0NNq54oim0zt0OS.KU/wr1AoeNa",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseUrl}}/ad/add",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"ad",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/ad/list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "{{baseUrl}}/ad/list",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"ad",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/ad/item",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/ad/item?id=60ca1847aff0270e0c935813&other=true",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"ad",
+						"item"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "60ca1847aff0270e0c935813"
+						},
+						{
+							"key": "other",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/ad/:id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "$2b$10$/KUOPJU42alE3F6ITwGVXu/H.R0NNq54oim0zt0OS.KU/wr1AoeNa",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseUrl}}/ad/1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"ad",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "locahost:6000"
+		}
+	]
+}
